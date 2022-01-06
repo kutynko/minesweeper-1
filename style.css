@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.closed {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.empty {
+  border: 1px dotted grey;
+}
+
+.bomb {
+  background-image: url('bomd.png');
+  background-size: cover;
+  border: 1px dotted grey;
+}
+
+.bomb-fail {
+  background-color: red;
+  background-image: url('bomd.png');
+  background-position: right;
+  background-size: 15px 15px;
+  border: 1px dotted grey;
+}
+
+.flag {
+  background-image: url('flag.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.n1 {
+color: blue;
+}
+
+.n2 {
+  color: green
+}
+
+.n3 {
+  color: red;
+}
+
+.n4 {
+  color: darkblue;
+}
+
+.n5 {
+  color: darkred;
+}
+
+.n6 {
+  color: darkcyan;
+}
+
+.n7 {
+  color: black;
+}
+
+.n8 {
+  color: darkgrey;
+}
+.n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
+  border: 1px dotted grey;
+  cursor: default;
+}
+
+h1.win {
+  color: green;
+}
+h1.loose {
+  color: red;
+}
